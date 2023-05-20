@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/Claudenir-Nojosa/Bash-Course.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Claudenir-Nojosa/Bash-Course/stargazers/)
+[![GitHub stars](https://img.shields.io/github/stars/Claudenir-Nojosa/Node.JS-Course-.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Claudenir-Nojosa/Node.JS-Course-/stargazers/)
 
 </div>
 
@@ -44,21 +44,25 @@
 <p align="center">
 <img height="250em" src="https://servidor-estaticos-xi-one.vercel.app/nodejs%20logo.png"/>
 </p>
-<h2> 🎃 O que é Node.js? 🎃 
+<h2> 🔫 O que é Node.js?  🔫
 </h2>
 
 <p>
 É um interpretador Javascript (programa que entende Javascript) que não depende do navegador, ou seja, ele está totalmente desvinculado do navegador.
-<table>
-  <tr>
-    <td>   
-        <img height="200em" src="https://servidor-estaticos-xi-one.vercel.app/v8.png"/>
-    </td>
-    <td>     
-        <img height="200em" src="https://servidor-estaticos-xi-one.vercel.app/Libuv.svg.png"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+    <table>
+        <center>
+            <tr>
+                <td align="center" colspan = "2" style="padding: 24px 0; max-width: 250px">
+                    <img src="https://servidor-estaticos-xi-one.vercel.app/v8.png">
+                </td>
+                <td align="center" colspan = "2" style="padding: 24px 0; max-width: 250px">
+                    <img src="https://servidor-estaticos-xi-one.vercel.app/Libuv.svg.png">
+                </td>
+            </tr>
+        </center>
+    </table>
+</div>
 
 As duas bases para a criação do Nodejs são o V8 e o libuv
 <ul>
@@ -71,7 +75,7 @@ As duas bases para a criação do Nodejs são o V8 e o libuv
 
 O Node.js fornece aos desenvolvedores uma ferramenta abrangente para trabalhar no paradigma de I/O orientado a eventos e sem bloqueio. Ryan Dahl, o criador do Node.js foi “inspirado por aplicativos como o Gmail” e – ao criar o Node.js – teve como objetivo criar sites em tempo real com capacidade push.
 
-🍊 <h3>Qual linguagem o Node.js é escrito?</h3> 🍊 
+<h3>🎢 Qual linguagem o Node.js é escrito? 🎢</h3>  
 <br>
 Node.js é escrito em C, C++ e JavaScript. 
 
@@ -118,7 +122,9 @@ Em um modelo de solicitação-resposta multiencadeado, vários clientes enviam u
 
 Como o node.js processa as solicitações recebidas usando o loop de eventos
 
-<img height="250em" src="https://servidor-estaticos-xi-one.vercel.app/node_architecture.png"/>
+<div align="center">
+    <img height="500em" src="https://servidor-estaticos-xi-one.vercel.app/node_architecture.png"/>
+</div>
 
 Node.js funciona de maneira diferente. Vamos dar uma olhada em cada etapa que ele percorre:
 <ol>
@@ -177,7 +183,10 @@ Tipos de módulos Node: Módulo em Node.js é uma funcionalidade simples ou comp
     Módulos de terceiros: Módulos de terceiros são os módulos Node externos. Esses são os módulos Node de terceiros desenvolvidos por desenvolvedores Node que são disponibilizados por meio do ecossistema Node. Mas precisamos de um gerenciador de pacotes que mantenha todos os módulos para que possam ser acessados com facilidade. É aqui que o NPM entra em cena.
     </li>
 </ul>
-<img height="250em" src="https://servidor-estaticos-xi-one.vercel.app/npm.png"/>
+
+<div align="center">
+    <img height="350em" src="https://servidor-estaticos-xi-one.vercel.app/npm.png"/>
+</div>
 
 NPM (Node Package Manager): NPM é o gerenciador de pacotes padrão para ambiente de tempo de execução JavaScript em Node.js O Node.js Package Manager (npm) é o gerenciador de pacotes padrão e mais popular no ecossistema Node.js, usado principalmente para instalar e manter módulos externos no aplicativo Node.js. Os usuários podem basicamente instalar os módulos de nó necessários para seu aplicativo usando o npm. Como exportar módulos? Primeiro, inicialize um aplicativo node.js digitando npm init no prompt de comando/terminal (verifique se você está presente na pasta do projeto atual). Ele criará um arquivo package.json. Use a seguinte sintaxe para adicionar um módulo no projeto Node.js. Sintaxe:
 
@@ -221,11 +230,18 @@ No entanto, toda vez que alteramos o código, precisamos reiniciar o servidor pa
 
 | Módulos  | O que são |
 | ------------- |:-------------:|
-| express, Express.js, or simply Express      | A Sinatra-inspired web development framework for Node.js, and the de facto standard for the majority of Node.js applications.     |
+| express, Express.js, ou simplesmente Express      | Uma estrutura de desenvolvimento da Web, "padrão de fábrica" para a maioria dos aplicativos Node.js.    |
+| hapi      | Framework para criação de aplicativos web.   |
+| connect      | Uma estrutura de servidor HTTP para Node.js, fornecendo uma coleção de plug-ins de alto desempenhos conhecidos como middleware; ele serve como base para o Express.    |
+| socket.io e sockjs      | O Socket.IO permite a comunicação baseada em eventos bidirecionais em tempo real.    |
+| mongodb e mongojs      | Possibilita a comunicação com a API do MongoDB.  |
+| forever     |  Uma ferramenta CLI simples para garantir que um determinado script seja executado continuamente (ou seja, para sempre). |
+| bluebird      | Bluebird é uma biblioteca com foco em recursos inovadores e desempenho.    |
+| moment.js      | Uma biblioteca de datas JavaScript para analisar, validar, manipular e formatar datas.     |
 
 ---
 
-<h2> Módulo Express: </h2>
+<h2> 🎿 Módulo Express: 🎿 </h2>
 
 Express é um framework, ou seja, é um facilitador no desenvolvimento de diversas aplicações, poupando tempo para quem utiliza, pois otimiza muitas linhas de código. Além de ser rápido, ele é um dos frameworks mais utilizados.
 
@@ -383,9 +399,12 @@ let result = num1 + num2;
 
 ---
 
-<h2> Nodemon </h2>
+<h2> 😈 Nodemon 😈</h2>
 
-<img height="250em" src="https://servidor-estaticos-xi-one.vercel.app/nodemon.png"/>
+<div align="center">
+    <img height="400em" src="https://servidor-estaticos-xi-one.vercel.app/nodemon.png"/>
+</div>
+
 
 Para não ter que sair do servidor usando o “CTRL + C” toda vez que fazemos alterações no nosso código, nós instalaremos o modulo chamado “nodemon”.
 
