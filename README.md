@@ -44,7 +44,7 @@
 <p align="center">
 <img height="250em" src="https://servidor-estaticos-xi-one.vercel.app/nodejs%20logo.png"/>
 </p>
-<h2 style="color: #e2e"> 🔫 O que é Node.js?  🔫 </h2>
+<h2> 🔫 O que é Node.js?  🔫 </h2>
 
 <p>
 É um interpretador Javascript (programa que entende Javascript) que não depende do navegador, ou seja, ele está totalmente desvinculado do navegador.
@@ -107,7 +107,7 @@ Node.js é escrito em C, C++ e JavaScript.
 
 ---
 
-<h2> Como funciona o Node.js? </h2>
+<h2> 🧞‍♂️ Como funciona o Node.js? 🧞‍♂️</h2>
 
 O Node realmente brilha na criação de aplicativos de rede escaláveis e rápidos. Isso se deve à sua capacidade de lidar com um grande número de conexões simultâneas.
 
@@ -166,7 +166,7 @@ Como o Node.js usa menos threads, ele utiliza menos recursos/memória, resultand
 
 ---
 
-<h2> Módulos </h2>
+<h2> 🛸 Módulos 🛸</h2>
 
 Tipos de módulos Node: Módulo em Node.js é uma funcionalidade simples ou complexa organizada em um ou vários arquivos JS que podem ser usados novamente em todo o aplicativo Node.js. Existem três tipos de módulos Node.js:
 <ul>
