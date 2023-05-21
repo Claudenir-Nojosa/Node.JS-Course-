@@ -44,8 +44,7 @@
 <p align="center">
 <img height="250em" src="https://servidor-estaticos-xi-one.vercel.app/nodejs%20logo.png"/>
 </p>
-<h2> 🔫 O que é Node.js?  🔫
-</h2>
+<h2 style="color: #e2e"> 🔫 O que é Node.js?  🔫 </h2>
 
 <p>
 É um interpretador Javascript (programa que entende Javascript) que não depende do navegador, ou seja, ele está totalmente desvinculado do navegador.
@@ -81,28 +80,28 @@ Node.js é escrito em C, C++ e JavaScript.
 
 ---
 
-<h2> Recursos do Node.js </h2>
+<h2> 🐱‍👤Recursos do Node.js 🐱‍👤</h2>
 <ol>
     <li>
-    Fácil —Node.js é muito fácil de começar. É uma escolha obrigatória para iniciantes em desenvolvimento web. Com muitos tutoriais e uma grande comunidade, é muito fácil começar.
+    <strong>Fácil</strong> —Node.js é muito fácil de começar. É uma escolha obrigatória para iniciantes em desenvolvimento web. Com muitos tutoriais e uma grande comunidade, é muito fácil começar.
     </li>
     <li>
-    Escalável —Fornece ampla escalabilidade para aplicativos. Node.js, sendo single-threaded, é capaz de lidar com um grande número de conexões simultâneas com alta taxa de transferência.
+    <strong>Escalável</strong> —Fornece ampla escalabilidade para aplicativos. Node.js, sendo single-threaded, é capaz de lidar com um grande número de conexões simultâneas com alta taxa de transferência.
     </li>
     <li>
-    Velocidade —A execução de encadeamento sem bloqueio torna o Node.js ainda mais rápido e eficiente.
+    <strong>Velocidade</strong> —A execução de encadeamento sem bloqueio torna o Node.js ainda mais rápido e eficiente.
     </li>
     <li>
-    Pacotes —Está disponível um vasto conjunto de pacotes Node.js de código aberto que podem simplificar seu trabalho. Existem mais de um milhão de pacotes no ecossistema NPM hoje.
+    <strong>Pacotes</strong> —Está disponível um vasto conjunto de pacotes Node.js de código aberto que podem simplificar seu trabalho. Existem mais de um milhão de pacotes no ecossistema NPM hoje.
     </li>
     <li>
-    Forte infra-estrutura —Node.js é escrito em C e C++, o que o torna rápido e adiciona recursos como suporte de rede.
+    <strong>Forte infra-estrutura</strong> —Node.js é escrito em C e C++, o que o torna rápido e adiciona recursos como suporte de rede.
     </li>
     <li>
-    Multiplataforma —O suporte multiplataforma permite que você crie sites SaaS, aplicativos de desktop e até mesmo aplicativos móveis, [todos usando Node.js](https://kinsta.com/application-hosting/node-js /).
+    <strong>Multiplataforma</strong> —O suporte multiplataforma permite que você crie sites SaaS, aplicativos de desktop e até mesmo aplicativos móveis.
     </li>
     <li>
-    Eclético — Node.js é uma escolha fácil para desenvolvedores, pois tanto o front-end quanto o back-end podem ser gerenciados com JavaScript como uma única linguagem.
+    <strong>Eclético</strong> — Node.js é uma escolha fácil para desenvolvedores, pois tanto o front-end quanto o back-end podem ser gerenciados com JavaScript como uma única linguagem.
     </li>
 </ol>
 
@@ -110,44 +109,42 @@ Node.js é escrito em C, C++ e JavaScript.
 
 <h2> Como funciona o Node.js? </h2>
 
-O Node realmente brilha na criação de aplicativos de rede escaláveis e rápidos. Isso se deve à sua capacidade de lidar com um grande número de conexões simultâneas com alto throughput.
+O Node realmente brilha na criação de aplicativos de rede escaláveis e rápidos. Isso se deve à sua capacidade de lidar com um grande número de conexões simultâneas.
 
-O Node.js usa E/S sem bloqueio e orientada a eventos para permanecer leve e eficiente diante de aplicativos em tempo real com uso intensivo de dados que são executados em dispositivos distribuídos.
+O Node.js usa I/O sem bloqueio e orientada a eventos para permanecer leve e eficiente diante de aplicativos em tempo real com uso intensivo de dados que são executados.
 
-O Node.js é uma plataforma que atende a uma necessidade específica, e entender isso é absolutamente essencial. Por exemplo, você não usaria Node.js para executar operações intensivas de CPU. Quase todas as vantagens do Node são anuladas se ele for usado para computação pesada.
+O Node.js é uma plataforma que atende a uma necessidade específica. Por exemplo, você não usaria Node.js para executar operações intensivas de CPU. Quase todas as vantagens do Node são anuladas se ele for usado para computação pesada.
 
-O Node.js usa a arquitetura “Single Threaded Event Loop” para lidar com vários clientes ao mesmo tempo. Para entender como isso é diferente de outros tempos de execução, precisamos entender como os clientes simultâneos multiencadeados são tratados em linguagens como Java.
+O Node.js usa a arquitetura “Single Threaded Event Loop” para lidar com vários clientes ao mesmo tempo. Para entender como isso é diferente de outros tempos de execução, você precisa entender como os clientes simultâneos multiencadeados são tratados em linguagens como Java.
 
 Em um modelo de solicitação-resposta multiencadeado, vários clientes enviam uma solicitação e o servidor processa cada uma delas antes de enviar a resposta de volta. No entanto, vários encadeamentos são usados para processar chamadas simultâneas. Esses encadeamentos são definidos em um pool de encadeamentos e, sempre que uma solicitação chega, um encadeamento individual é designado para tratá-lo.
-
-Como o node.js processa as solicitações recebidas usando o loop de eventos
 
 <div align="center">
     <img height="500em" src="https://servidor-estaticos-xi-one.vercel.app/node_architecture.png"/>
 </div>
 
-Node.js funciona de maneira diferente. Vamos dar uma olhada em cada etapa que ele percorre:
+<strong>Node.js funciona de maneira diferente. Segue abaixo cada etapa que ele percorre: </strong>
 <ol>
     <li>
     O Node.js mantém um pool de threads limitado para atender às solicitações.
     </li>
     <li>
-    Sempre que chega uma solicitação, o Node.js a coloca em uma fila.
+    Sempre quando uma solicitação chega, o Node a coloca em uma fila.
     </li>
     <li>
-    Agora, o “loop de evento” de thread único – o componente principal – entra em cena. Esse loop de eventos aguarda solicitações indefinidamente.
+    Agora, o “loop de evento” de thread único entra em cena. Esse loop de eventos aguarda solicitações indefinidamente.
     </li>
     <li>
-    Quando chega uma solicitação, o loop a pega da fila e verifica se ela requer uma operação de entrada/saída (E/S) de bloqueio. Caso contrário, ele processa a solicitação e envia uma resposta.
+    Quando uma solicitação chega, o loop a seleciona da fila e primeiro verifica se ela requer uma operação de entrada/saída (I/O ou INPUT/OUTPUT do inglês) de bloqueio. Caso contrário, ele processa a solicitação e envia uma resposta.
     </li>
     <li>
-    Se a solicitação tiver uma operação de bloqueio a ser executada, o loop de eventos atribuirá um encadeamento do pool de encadeamento interno para processar a solicitação. Existem roscas internas limitadas disponíveis. Esse grupo de threads auxiliares é chamado de grupo de trabalho.
+    Se a solicitação tiver uma operação de bloqueio a ser executada, o loop de eventos irá abrir um encadeamento interno para processar a solicitação. Esse grupo de threads auxiliares é chamado de "Worker Thread Pool".
     </li>
     <li>
     O loop de eventos rastreia as solicitações de bloqueio e as coloca na fila assim que a tarefa de bloqueio é processada. É assim que ele mantém sua natureza não bloqueadora.
     </li>
 </ol>
-Como o Node.js usa menos threads, ele utiliza menos recursos/memória, resultando em uma execução mais rápida da tarefa. Portanto, para nossos propósitos, essa arquitetura de thread único é equivalente à arquitetura multithread. Quando alguém precisa processar tarefas com uso intensivo de dados, usar linguagens multiencadeadas como Java faz muito mais sentido. Mas para aplicações em tempo real, Node.js é a escolha óbvia.
+Como o Node.js usa menos threads, ele utiliza menos recursos/memória, resultando em uma execução mais rápida. Quando alguém precisa processar tarefas muito pesadas, com uso intensivo de dados, usar linguagens multiencadeadas como Java faz muito mais sentido. Agora, se for para aplicações em tempo real, graças a toda arquitetura explicada anteriormente, o Node.js é a escolha óbvia.
 
 ---
 
@@ -174,13 +171,13 @@ Como o Node.js usa menos threads, ele utiliza menos recursos/memória, resultand
 Tipos de módulos Node: Módulo em Node.js é uma funcionalidade simples ou complexa organizada em um ou vários arquivos JS que podem ser usados novamente em todo o aplicativo Node.js. Existem três tipos de módulos Node.js:
 <ul>
     <li>
-    Módulos locais/baseados em arquivo: Define os módulos Node dentro de um arquivo em nosso aplicativo e é usado em nosso aplicativo.
+    Módulos locais/baseados em arquivo: Define os módulos Node dentro de um arquivo em seu aplicativo e é usado em seu aplicativo.
     </li>
     <li>
     Módulos principais: Os módulos principais são módulos embutidos no Node.js. Esses módulos fornecem funcionalidade suficiente para que os designers de módulos externos possam adicionar sua própria funcionalidade que pode ser usada durante o desenvolvimento de aplicativos Node. Os módulos principais incluem path, file system, os, util e alguns outros.
     </li>
     <li>
-    Módulos de terceiros: Módulos de terceiros são os módulos Node externos. Esses são os módulos Node de terceiros desenvolvidos por desenvolvedores Node que são disponibilizados por meio do ecossistema Node. Mas precisamos de um gerenciador de pacotes que mantenha todos os módulos para que possam ser acessados com facilidade. É aqui que o NPM entra em cena.
+    Módulos de terceiros: Módulos de terceiros são os módulos Node externos. Esses são os módulos Node de terceiros desenvolvidos por desenvolvedores Node que são disponibilizados por meio do ecossistema Node. Mas é necessário um gerenciador de pacotes que mantenha todos os módulos para que possam ser acessados com facilidade. É aqui que o NPM entra em cena.
     </li>
 </ul>
 
@@ -194,7 +191,7 @@ NPM (Node Package Manager): NPM é o gerenciador de pacotes padrão para ambient
   var módulo = require("module_name");
 ```
 **Exemplo de módulo local:** 
-Para fazer isso precisamos transformar o código em uma variável. 
+Para fazer isso você precisa transformar o código em uma variável. 
 Após isso, digite o código:
 
 ```jsx
@@ -202,7 +199,7 @@ Após isso, digite o código:
 module exports = nome da variável;
 ```
 
-Depois de exportar o módulo, precisamos “importar” o mesmo no nosso arquivo Javascript principal, digitando o código:
+Depois de exportar o módulo, você precisa “importar” o mesmo no seu arquivo Javascript principal, digitando o código:
 
 ```jsx
 
@@ -223,8 +220,8 @@ http.createServer(function(req,res){
 console.log(”O servidor rodando”);
 ```
 
-Para acessar o servidor, vamos no nosso navegador e digite localhost:8081
-No entanto, toda vez que alteramos o código, precisamos reiniciar o servidor para que seja atualizado.
+Para acessar o servidor, vá ao seu navegador e digite localhost:8081
+No entanto, toda vez que você alterar o código, você precisará reiniciar o servidor para que seja atualizado.
 
 <h2> Alguns módulos importantes inclusos no node: </h2>
 
@@ -250,8 +247,8 @@ Ele é escrito em Javascript e utilizado por diversas empresas, como a Fox Sport
 <h2> Características do Express.js </h2>
 
 O Express é um framework incrível e possui diversas características 
-que facilitam o desenvolvimento de nossas aplicações. Dentre suas 
-principais características, podemos citar:
+que facilitam o desenvolvimento de suas aplicações. Dentre suas 
+principais características, há:
 <ul>
     <li>
         Possui um sistema de rotas completo;
@@ -272,7 +269,7 @@ principais características, podemos citar:
 
 <h2> Iniciando o uso do Express </h2>
 
-Para utilizar o módulo precisamos primeiramente instalar ele e depois requerer(importar) no nosso arquivo principal Javascript.
+Para utilizar o módulo você precisa primeiramente instalar ele e depois requerer(importar) no seu arquivo principal Javascript.
 
 ```jsx
 *npm i express*
@@ -282,13 +279,13 @@ Para utilizar o módulo precisamos primeiramente instalar ele e depois requerer(
 *const express = require(“express”);*
 ```
 
-Depois disso, criamos uma constante que irá receber todo o módulo express:
+Depois disso, crie uma constante que irá receber todo o módulo express:
 
 ```jsx
 *const app = express();*
 ```
 
-Para criarmos um servidor, basta a gente escrever uma linha de código:
+Para você criar um servidor, basta escrever uma linha de código:
 
 ```jsx
 app.listen(8081);
@@ -296,7 +293,7 @@ app.listen(8081);
 
 **OBS: essa linha de código deve ser a última da sua aplicação, ou seja, toda a aplicação deve ser escrita antes do .listen**
 
-Só que aqui o servidor esta rodando infinitamente e não mostra nenhuma mensagem informando que ele está funcionando. Para isso, incluímos uma função de callback:
+Só que aqui o servidor esta rodando infinitamente e não mostra nenhuma mensagem informando que ele está funcionando. Para isso, você incluirá uma função de callback:
 
 ```jsx
 app.listen(8081, function(){
@@ -304,33 +301,33 @@ app.listen(8081, function(){
 });
 ```
 
-Só que ainda assim, quando a gente entra na url do servidor, ele informa *“cannot get /“*. 
+Só que ainda assim, quando você entra na url do servidor, ele informa *“cannot get /“*. 
 
-Isso se dá pelo fato de que o nosso servidor atualmente não está retornando nada quando o nosso navegador faz o *“get request”*.
+Isso se dá pelo fato de que o seu servidor atualmente não está retornando nada quando o seu navegador faz o *“get request”*.
 
 > **Get:** Usado quando o cliente deseja obter recursos do servidor
 > 
 
-> **Request:** Pedido que o cliente realiza no servidor. No navegador toda vez que trocamos de página ou apertamos enter na barra de endereço, uma nova request é feita. Independente se estamos apenas pedindo a exibição de uma página, cadastrando um novo recurso, atualizando ou excluindo.
+> **Request:** Pedido que o cliente realiza no servidor. No navegador toda vez que você troca de página ou aperta enter na barra de endereço, uma nova request é feita. Independente se você está apenas pedindo a exibição de uma página, cadastrando um novo recurso, atualizando ou excluindo.
 >
 
-Não construiu ainda uma rota para o nosso servidor, uma rota é como se fosse um caminho, é a página inicial.
+Não construiu ainda uma rota para o seu servidor, uma rota é como se fosse um caminho, é a página inicial.
 
-Então vamos mudar isso, em cima do código app.listen, a gente vai escrever app.get. Que é um metodo que o Express nos permite especificar o que é para acontecer quando o navegador entra em contato com o nosso servidor e faz um *“get request”*.
+Então você irá mudar isso, em cima do código app.listen, a gente vai escrever app.get. Que é um metodo que o Express nos permite especificar o que é para acontecer quando o navegador entra em contato com o seu servidor e faz um *“get request”*.
 
-O primeiro parametro que ele pega é a localização do nosso get request.
+O primeiro parametro que ele pega é a localização do seu get request.
 
-Que é a rota do nosso servidor, representada pelo “/”.
+Que é a rota do seu servidor, representada pelo “/”.
 
 ```jsx
 app.get("/")
 ```
 
-Depois temos uma callback function que informa ao nosso servidor o que fazer quando receber esse request. 
+Depois você terá uma callback function que informa ao seu servidor o que fazer quando receber esse request. 
 
 Essa função recebe dois parâmetros, uma de request e uma de response.
 
-Request é o que estamos pedindo para o servidor fazer, nesse caso, carregar a página.
+Request é o que você está pedindo para o servidor fazer, nesse caso, carregar a página.
 
 Response é o que ele irá fazer após carregar a página.
 
@@ -350,13 +347,13 @@ res.sendFile(__dirname +"/index.html")
 
 Post request é quando o cliente envia ao servidor dados para armazenamento.
 
-No caso de um formulário, por exemplo, no forms colocamos o method=”post”. Da seguinte maneira:
+No caso de um formulário, por exemplo, no forms você colocará o method=”post”. Da seguinte maneira:
 
 ```jsx
 <form method="post">
 ```
 
-E no arquivo do servidor, inserimos o código app.post, com uma callback function. Da seguinte maneira:
+E no arquivo do servidor, você inserirá o código app.post, com uma callback function. Da seguinte maneira:
 
 ```jsx
 app.post("/", function(req,res){
@@ -376,7 +373,7 @@ Para instalar é bastante simples, basta digitar no CLI:
 npm i body-parser
 ```
 
-Após instalar o pacote, requerimos o Body Parser no nosso arquivo js:
+Após instalar o pacote, você requerirá o Body Parser no seu arquivo js:
 
 ```jsx
 const bodyParser = require("body-parser");
@@ -406,17 +403,17 @@ let result = num1 + num2;
 </div>
 
 
-Para não ter que sair do servidor usando o “CTRL + C” toda vez que fazemos alterações no nosso código, nós instalaremos o modulo chamado “nodemon”.
+Para não ter que sair do servidor usando o “CTRL + C” toda vez que você faz alterações no seu código, você instalará o modulo chamado “nodemon”.
 
-Basicamente ele observa o nosso código e atualiza o nosso servidor automaticamente.
+Basicamente ele observa o seu código e atualiza o seu servidor automaticamente.
 
-Para realizar a instalação do nodemon, simplesmente abrimos o Shell e digitamos:
+Para realizar a instalação do nodemon, simplesmente abrá o Shell e execute o comando:
 
 ```jsx
 npm i -g nodemon
 ```
 
-Depois de instalar globalmente na nossa máquina, você irá digitar “nodemon + nome do arquivo que contém o servidor”.
+Depois de instalar globalmente na sua máquina, você irá digitar “nodemon + nome do arquivo que contém o servidor”.
 
 ---
 
